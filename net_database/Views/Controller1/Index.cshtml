@@ -1,0 +1,26 @@
+@using System.Data.SqlClient
+@model List<Model1Model>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Users</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Name</td>
+                <td>@user.Age</td>
+            </tr>
+        }
+    </tbody>
+</table>

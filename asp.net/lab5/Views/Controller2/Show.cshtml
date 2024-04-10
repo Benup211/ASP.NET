@@ -1,0 +1,11 @@
+@{
+    ViewData["Title"] = "Show";
+}
+
+<div class="text-center">
+    <h1>This is @ViewData["Title"] of controller2</h1>
+    @for(int i=0;i<(int)ViewData["num"];i++)
+    {
+        <p>string: @ViewData["value"]</p>
+    }
+</div>
